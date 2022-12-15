@@ -49,7 +49,7 @@ def decode_word(word)
   str
 end
 puts decode_word('-- -.--')
-# Decode hole phrase
+# Decode whole phrase
 def decode_morse(phrase)
   result = phrase.split('   ').map do |word|
     word.split.map do |char|
@@ -60,4 +60,5 @@ def decode_morse(phrase)
 end
 decode_morse('-- -.--   -. .- -- .')
 
+# Using the function to decode the message
 decode_morse('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
